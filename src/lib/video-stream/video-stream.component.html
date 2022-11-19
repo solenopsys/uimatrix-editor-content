@@ -1,0 +1,39 @@
+<input type="datetime-local" [(ngModel)]="dateTime">
+<button (click)="find()">find</button>
+<button (click)="start()">start</button>
+
+
+<div style="  width:1920px;
+    height:1080px;">
+
+
+
+  <div style="display: flex;">
+
+      <div  [ngStyle]="{opacity: show1? 1:0 }">
+
+
+      <video style="position: absolute; display: block;"
+             preload width="1920" height="1080" #myvideo1
+             type="video/mp4">
+        <source   #srcz1>
+      </video>
+      </div>
+
+      <div  [ngStyle]="{opacity: show1? 0:1}">
+          <video style="position: absolute; display: block;"
+                 preload width="1920" height="1080" #myvideo2
+                 type="video/mp4">
+              <source   #srcz2>
+          </video>
+      </div>
+
+
+  </div>
+
+
+
+
+</div>
+
+

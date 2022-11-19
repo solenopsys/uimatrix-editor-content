@@ -1,0 +1,6 @@
+<fui-icon-button
+        *ngFor="let action of actions"
+        [icon]="action.icon"
+        [title]="action.title"
+        (click)="emmitAction.emit(action.key)">
+</fui-icon-button>

@@ -1,0 +1,8 @@
+{
+  "name": "@solenopsys/uimatrix-editor-content",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "node index.js",
+    "build": "tsc -p tsconfig.lib.json"
+  }
+}

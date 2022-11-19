@@ -1,0 +1,12 @@
+<div (clickOutside)="visible=false">
+    <input type="text"
+           [(ngModel)]="text"
+           (ngModelChange)="strObservable.next($event)"
+           (keyup)="textChange.emit(text)"
+           (focus)="strObservable.next($event)">
+
+    <div class="menu-box" [ngStyle]="{visibility:visible?'visible':'hidden'}"
+         *ngIf="(filteredEntities | async) as enitites">
+        <div class="item" *ngFor="let entity of enitites" (click)="selectEntity(entity)">{{entity.title}}</div>
+    </div>
+</div>

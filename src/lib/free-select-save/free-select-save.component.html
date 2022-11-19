@@ -1,0 +1,7 @@
+<div style="display: flex">
+    <fui-free-select [dataProvider]="dataProvider" [(value)]="value" (valueChange)="entitySelect($event)"
+                     (textChange)="textChanged($event)"></fui-free-select>
+    <fui-icon-button *ngIf="showSave" icon="/assets/icons/01-Interface-Essential/33-Form-Validation/check-double.svg"
+                     title="Добавить"
+                     (click)="saveNew(newText)"></fui-icon-button>
+</div>
