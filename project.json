@@ -1,4 +1,5 @@
 {
+  "name": "content",
   "projectType": "library",
   "sourceRoot": "libs/fui/components/src",
   "prefix": "hyperconverged",
