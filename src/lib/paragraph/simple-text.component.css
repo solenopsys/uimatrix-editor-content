@@ -1,0 +1,31 @@
+div:focus {
+  outline: none;
+}
+
+.HEADER1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.HEADER2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.HEADER3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.PARAGRAPH {
+
+  line-height: 25px;
+  word-spacing: 6px;
+  width: auto;
+}
+
+.textBlock {
+  margin-bottom: 25px;
+  padding: 5px;
+  width: auto;
+}

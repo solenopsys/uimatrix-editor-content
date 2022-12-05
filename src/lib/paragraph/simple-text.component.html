@@ -1,0 +1,12 @@
+<ng-container *ngIf="block$|async; let block">
+  <div #textDiv
+       ondragenter="event.preventDefault(); event.dataTransfer.dropEffect = 'none'" ondragover="event.preventDefault(); event.dataTransfer.dropEffect = 'none'"
+       [contentEditable]="true"
+       (keydown)="eventProcessing($event)"
+       (keyup)="changeAction($event)"
+       [class]="block.type"
+       class="textBlock">
+  </div>
+</ng-container>
+
+<!--<button (click)="selectAndSetCursor(10)">set cursor</button>-->

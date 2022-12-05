@@ -1,0 +1,22 @@
+<ng-container *ngIf="nodesGroup$ | async ; let nodesGroup">
+  <fui-drag-target [index]="0" [groupID]="groupID" [dragAndDropState$]="dragAndDropState$"></fui-drag-target>
+
+  <div *ngFor="let blockId of nodesGroup.blocks; let i = index;" >
+
+
+    <div   style="display: flex"  #cmp (dragstart)="startDrag(i)" (dragend)="endDrag(i)" (dragover)="overDrag(i,$event)">
+       <fui-drag-handle-text></fui-drag-handle-text>
+        <fui-icon-button icon="/assets/icons/01-Interface-Essential/43-Remove-Add/remove.svg"
+                         (click)="remove(i)"></fui-icon-button>
+
+      <fui-node-editor [blockId]="blockId" [index]="i" [groupID]="groupID"></fui-node-editor>
+    </div>
+    <fui-drag-target [index]="i+1" [groupID]="groupID" [dragAndDropState$]="dragAndDropState$"></fui-drag-target>
+  </div>
+
+  <ng-container *ngIf="nodesGroup$ | async ; let nodesGroup">
+    <fui-icon-button icon="/assets/icons/01-Interface-Essential/43-Remove-Add/add.svg"
+                     (click)="add(nodesGroup.blocks)"></fui-icon-button>
+  </ng-container>
+
+</ng-container>

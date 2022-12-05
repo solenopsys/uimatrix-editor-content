@@ -1,0 +1,9 @@
+<div style="padding: 10px;">
+    <div *ngFor="let itemValue of blocks  ; let i = index  ;" style="display: flex; ">
+        <div *ngIf="itemValue.type===TN.PARAGRAPH || itemValue.type===TN.HEADER1 || itemValue.type===TN.HEADER2 || itemValue.type===TN.HEADER3 " style="display: flex">
+            <div  [class]="itemValue.type"   >{{itemValue.value}}</div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,19 @@
+<div style="display: flex">
+  <fui-free-select
+    [dataProvider]="provider"
+    [(value)]="value$ "
+    (valueChange)="entitySelect($event)"
+    (textChange)="textChanged($event)"
+  >
+  </fui-free-select>
+
+  <ng-container *ngIf=" this.nodesGroup$ |async; let group">
+    <button *ngIf="group.edited" (click)="saveValues()">Сохранить</button>
+  </ng-container>
+</div>
+
+
+<div style="overflow-y: scroll; height: 1200px;">
+ <fui-graph-text [groupID]="groupId" ></fui-graph-text>
+</div>
+
