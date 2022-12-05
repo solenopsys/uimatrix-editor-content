@@ -1,14 +1,14 @@
 {
   "name": "content",
   "projectType": "library",
-  "sourceRoot": "libs/fui/components/src",
+  "sourceRoot": "packages/uimatrix/editors/src",
   "prefix": "hyperconverged",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/fui/components"],
+      "outputs": ["coverage/packages/uimatrix/editors"],
       "options": {
-        "jestConfig": "libs/fui/components/jest.config.js",
+        "jestConfig": "packages/uimatrix/editors/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -16,8 +16,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/fui/components/src/**/*.ts",
-          "libs/fui/components/src/**/*.html"
+          "packages/uimatrix/editors/src/**/*.ts",
+          "packages/uimatrix/editors/src/**/*.html"
         ]
       },
       "outputs": ["{options.outputFile}"]
