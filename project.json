@@ -1,11 +1,14 @@
 {
+  "name": "content",
   "projectType": "library",
   "sourceRoot": "libs/fui/editor/src",
   "prefix": "sc",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/fui/editor"],
+      "outputs": [
+        "coverage/libs/fui/editor"
+      ],
       "options": {
         "jestConfig": "libs/fui/editor/jest.config.js",
         "passWithNoTests": true
@@ -19,7 +22,9 @@
           "libs/fui/editor/src/**/*.html"
         ]
       },
-      "outputs": ["{options.outputFile}"]
+      "outputs": [
+        "{options.outputFile}"
+      ]
     }
   },
   "tags": []
