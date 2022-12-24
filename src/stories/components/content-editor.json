@@ -1,0 +1,9 @@
+{
+  "name": "ContentEditor",
+  "description": "Content Editor",
+  "component": "EditorContent",
+  "package": "@solenopsys/uimatrix-editor-content",
+  "io": {
+
+  }
+}

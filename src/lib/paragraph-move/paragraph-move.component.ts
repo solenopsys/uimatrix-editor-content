@@ -16,7 +16,7 @@ import {ContentState, LoadVersion} from "../store/content.store";
 import {ContentNodesGroup} from "../store/model";
 
 @Component({
-  selector: 'fui-paragraph-move',
+  selector: 'ui-paragraph-move',
   templateUrl: './paragraph-move.component.html',
   styleUrls: ['./paragraph-move.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,

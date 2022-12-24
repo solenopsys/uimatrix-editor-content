@@ -7,30 +7,34 @@ import { TextPageComponent } from './text-page/text-page.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 import { RouterModule } from '@angular/router';
 import { TextTypeSelectorComponent } from './text-type-selector/text-type-selector.component';
-import { FuiIconsModule } from '@solenopsys/uimatrix-icons';
 import { DragHangComponent } from './graph-text/drag-hand.component';
 import { ParagraphMoveComponent } from './paragraph-move/paragraph-move.component';
-import { FuiComponentsModule } from '@solenopsys/uimatrix-controls';
+import { UIControlsModule } from '@solenopsys/uimatrix-controls';
 import { NodeEditorComponent } from './node-editor/node-editor.component';
 import { DragTargetComponent } from './drag-target/drag-target.component';
+import {DeclaredService} from "@solenopsys/uimatrix-utils";
+import {UIIconsModule} from "@solenopsys/uimatrix-icons";
+
+const components = [
+  SimpleTextComponent,
+  TextPageComponent,
+  GraphTextComponent,
+  TextViewComponent,
+  DragHangComponent,
+  TextTypeSelectorComponent,
+  TextEditorComponent,
+  ParagraphMoveComponent,
+  NodeEditorComponent,
+  DragTargetComponent,
+];
+
 @NgModule({
-  declarations: [
-    SimpleTextComponent,
-    TextPageComponent,
-    GraphTextComponent,
-    TextViewComponent,
-    DragHangComponent,
-    TextTypeSelectorComponent,
-    TextEditorComponent,
-    ParagraphMoveComponent,
-    NodeEditorComponent,
-    DragTargetComponent,
-  ],
+  declarations: components,
   imports: [
     CommonModule,
     RouterModule,
-    FuiIconsModule,
-    FuiComponentsModule,
+    UIIconsModule,
+    UIControlsModule,
   ],
   providers: [],
   exports: [
@@ -39,6 +43,8 @@ import { DragTargetComponent } from './drag-target/drag-target.component';
     TextViewComponent
   ]
 })
-export class FuiEditorModule {
-
+export class UIEditorModule {
+  constructor(private ds: DeclaredService) {
+    ds.addComps("@solenopsys/uimatrix-editor-content", components)
+  }
 }

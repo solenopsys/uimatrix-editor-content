@@ -4,7 +4,7 @@
 
   <div style="height: 1000px">
     <div style="overflow-y: scroll; height: 70%;">
-      <fui-graph-text  [groupID]="groupId"></fui-graph-text>
+      <ui-graph-text  [groupID]="groupId"></ui-graph-text>
     </div>
 
     <br>
@@ -15,8 +15,8 @@
   </div>
 
   <h3>Версии</h3>
-  <!--    <fui-icon-button icon="/assets/icons/01-Interface-Essential/40-Keyboard/keyboard-arrow-left.svg"></fui-icon-button>-->
-  <!--    <fui-icon-button icon="/assets/icons/01-Interface-Essential/40-Keyboard/keyboard-arrow-right.svg"></fui-icon-button>-->
+  <!--    <ui-icon-button icon="/assets/icons/01-Interface-Essential/40-Keyboard/keyboard-arrow-left.svg"></ui-icon-button>-->
+  <!--    <ui-icon-button icon="/assets/icons/01-Interface-Essential/40-Keyboard/keyboard-arrow-right.svg"></ui-icon-button>-->
 
     <div *ngFor="let ver of fragment.versions" style="font-size: 10px;padding: 5px;">
       <a [routerLink]="'../'+ver.uid"

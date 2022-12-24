@@ -1,16 +1,16 @@
 <div style="position: relative;" (mouseenter)="showMenu=true" (mouseleave)="showMenu=false">
     <div style="min-width: 30px; display: block;">
-        <fui-icon-button [icon]="iconsMap[type]">
-        </fui-icon-button>
+        <ui-icon-button [icon]="iconsMap[type]">
+        </ui-icon-button>
     </div>
 
     <div *ngIf="showMenu"
          style="width: 30px; left:0px;top: 30px; display: block; position: absolute;background-color: #f3f3f3;z-index: 1">
         <div *ngFor="let icon of iconsMap | keyvalue">
-            <fui-icon-button *ngIf="icon.key!==type"
+            <ui-icon-button *ngIf="icon.key!==type"
                              [icon]="icon.value"
                              [title]="icon.key" (click)="select(icon.key)">
-            </fui-icon-button>
+            </ui-icon-button>
         </div>
     </div>
 </div>

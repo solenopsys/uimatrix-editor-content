@@ -5,7 +5,7 @@ import {firstValueFrom, map, Observable} from "rxjs";
 import {ContentNode} from "../store/model";
 
 @Component({
-  selector: 'fui-text-page',
+  selector: 'ui-text-page',
   templateUrl: './text-page.component.html',
   styleUrls: ['./text-page.component.css']
 })

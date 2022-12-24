@@ -2,7 +2,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'fui-text-type-selector',
+  selector: 'ui-text-type-selector',
   templateUrl: './text-type-selector.component.html',
   styleUrls: ['./text-type-selector.component.css']
 })

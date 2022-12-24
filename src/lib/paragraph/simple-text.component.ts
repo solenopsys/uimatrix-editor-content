@@ -14,7 +14,7 @@ import {ContentNodeState, SetFocusNode, UpdateValueNode} from "../store/content-
 
 
 @Component({
-  selector: 'fui-simple-text',
+  selector: 'ui-simple-text',
   templateUrl: './simple-text.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./simple-text.component.css']

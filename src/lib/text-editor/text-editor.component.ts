@@ -19,7 +19,7 @@ import {
 import {IdService} from "@solenopsys/lib-globals";
 
 @Component({
-  selector: 'fui-text-editor',
+  selector: 'ui-text-editor',
   templateUrl: './text-editor.component.html',
   styleUrls: ['./text-editor.component.css']
 })

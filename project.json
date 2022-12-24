@@ -1,16 +1,16 @@
 {
   "name": "content",
   "projectType": "library",
-  "sourceRoot": "libs/fui/editor/src",
-  "prefix": "sc",
+  "sourceRoot": "libs/uimatrix/editors/content/src",
+  "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/libs/fui/editor"
+        "coverage/libs/uimatrix/editors/content"
       ],
       "options": {
-        "jestConfig": "libs/fui/editor/jest.config.js",
+        "jestConfig": "libs/uimatrix/editors/content/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/fui/editor/src/**/*.ts",
-          "libs/fui/editor/src/**/*.html"
+          "libs/uimatrix/editors/content/src/**/*.ts",
+          "libs/uimatrix/editors/content/src/**/*.html"
         ]
       },
       "outputs": [

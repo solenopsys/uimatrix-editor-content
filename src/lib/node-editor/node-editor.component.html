@@ -1,10 +1,10 @@
 <div style="display: flex" *ngIf="block$|async; let block"
      [ngStyle]="{backgroundColor:block.edited?'#bbb4b4': 'transparent' }">
 
-  <fui-text-type-selector
+  <ui-text-type-selector
     [type]="block.type"
     (typeChange)="typeChange( $event)">
-  </fui-text-type-selector>
+  </ui-text-type-selector>
   <div class="delimiter"></div>
   <div class="nodeBlock"
        *ngIf="
@@ -13,7 +13,7 @@
          block.type===NODES_TYPES.HEADER2 ||
          block.type===NODES_TYPES.HEADER3
     ">
-    <fui-simple-text [blockId]="blockId" [index]="index" [groupID]="groupID"></fui-simple-text>
+    <ui-simple-text [blockId]="blockId" [index]="index" [groupID]="groupID"></ui-simple-text>
   </div>
 </div>
 

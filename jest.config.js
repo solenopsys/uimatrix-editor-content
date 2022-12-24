@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'fui-editor',
+  displayName: 'ui-editor',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/fui/editor',
+  coverageDirectory: '../../../coverage/libs/uimatrix/editor',
   transform: {
     '^.+.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

@@ -5,7 +5,7 @@ import {ContentNodeState, TypeChangeNode} from "../store/content-node.store";
 import { BlockNode, TextNodeType } from "@solenopsys/uimatrix-editor-content";
 
 @Component({
-  selector: 'fui-node-editor',
+  selector: 'ui-node-editor',
   templateUrl: './node-editor.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./node-editor.component.scss'],

@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {ContentNode, TextNodeType} from "../store/model";
 
 @Component({
-  selector: 'fui-text-view',
+  selector: 'ui-text-view',
   templateUrl: './text-view.component.html',
   styleUrls: ['./text-view.component.css']
 })

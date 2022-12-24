@@ -5,7 +5,7 @@ import {Store} from "@ngxs/store";
 import { DragState } from "@solenopsys/uimatrix-editor-content";
 
 @Component({
-  selector: 'fui-drag-target',
+  selector: 'ui-drag-target',
   templateUrl: './drag-target.component.html',
   styleUrls: ['./drag-target.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,

@@ -13,7 +13,7 @@ import {Select, Store} from "@ngxs/store";
 
 
 @Component({
-  selector: 'fui-graph-text',
+  selector: 'ui-graph-text',
   templateUrl: './graph-text.component.html',
   styleUrls: ['./graph-text.component.css']
 })
